@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int roll;
+    string name;
+    float marks;
+
+    cout << "Enter Roll Number: ";
+    cin >> roll;
+
+    cin.ignore();
+
+    cout << "Enter Name: ";
+    getline(cin, name);
+
+    cout << "Enter Marks: ";
+    cin >> marks;
+
+    cout << "\n--- Student Record ---\n";
+    cout << "Roll No: " << roll << endl;
+    cout << "Name: " << name << endl;
+    cout << "Marks: " << marks << endl;
+
+    return 0;
+}
